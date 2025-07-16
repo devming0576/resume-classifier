@@ -1,0 +1,44 @@
+# Handle line endings automatically for all text files
+* text=auto
+
+# Mark documentation files for linguist
+*.md linguist-documentation
+*.rst linguist-documentation
+*.txt linguist-documentation
+
+docs/* linguist-documentation
+
+# Mark Python source files
+*.py linguist-language=Python linguist-detectable=true
+src/** linguist-language=Python linguist-detectable=true
+
+# Treat Jupyter notebooks as source
+*.ipynb linguist-language=Jupyter
+
+# Exclude virtual environments and build artifacts from linguist stats
+.venv/* linguist-vendored
+.resume-classifier/* linguist-vendored
+build/* linguist-vendored
+dist/* linguist-vendored
+outputs/* linguist-vendored
+
+# Treat test files as source
+/tests/* linguist-language=Python
+/tests/** linguist-language=Python
+
+# Set default binary for images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+
+# Set default binary for models and data
+*.pkl binary
+*.h5 binary
+*.pt binary
+*.joblib binary
+*.npz binary
+*.npy binary
+
+# End of file
